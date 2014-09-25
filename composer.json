@@ -1,9 +1,9 @@
 {
-    "name": "speixoto/yii2-polymer",
+    "name": "evolutionlabs/yii2-polymer",
     "description": "Yii 2 implementation of polymer",
-    "keywords": ["yii", "polymer"],
+    "keywords": ["yii", "polymer", "yii2"],
     "type": "yii2-extension",
-    "license": "MIT",
+    "license": "TBD",
     "authors": [
         {
             "name": "Sérgio Peixoto",
@@ -11,15 +11,15 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/speixoto/yii2-polymer/issues",
-        "source": "https://github.com/speixoto/yii2-polymer"
+        "issues": "https://github.com/evolutionlabs/yii2-polymer/issues",
+        "source": "https://github.com/evolutionlabs/yii2-polymer"
     },
     "require": {
         "yiisoft/yii2": "*"
     },
     "autoload": {
         "psr-4": {
-            "speixoto\\polymer\\": ""
+            "evolutionlabs\\polymer\\": ""
         }
     }
 }
