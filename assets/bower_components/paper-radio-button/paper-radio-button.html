@@ -56,6 +56,8 @@ To change the radio unchecked color:
 <template>
 
   <link rel="stylesheet" href="paper-radio-button.css">
+
+  <core-a11y-keys target="{{}}" keys="space" on-keys-pressed="{{tap}}"></core-a11y-keys>
   
   <div id="radioContainer" class="{{ {labeled: label} | tokenList }}">
   
@@ -74,9 +76,15 @@ To change the radio unchecked color:
   Polymer('paper-radio-button', {
     
     /**
-     * Fired when the checked state changes.
+     * Fired when the checked state changes due to user interaction.
      *
      * @event change
+     */
+     
+    /**
+     * Fired when the checked state changes.
+     *
+     * @event core-change
      */
     
     publish: {
@@ -107,7 +115,16 @@ To change the radio unchecked color:
        * @type boolean
        * @default false
        */
-      toggles: false
+      toggles: false,
+      
+      /**
+       * If true, the user cannot interact with this element.
+       *
+       * @attribute disabled
+       * @type boolean
+       * @default false
+       */
+      disabled: {value: false, reflect: true}
     },
     
     eventDelegates: {
@@ -115,8 +132,11 @@ To change the radio unchecked color:
     },
     
     tap: function() {
+      var old = this.checked;
       this.toggle();
-      this.fire('paper-radio-button-activate');
+      if (this.checked !== old) {
+        this.fire('change');
+      }
     },
     
     toggle: function() {
@@ -126,7 +146,7 @@ To change the radio unchecked color:
     checkedChanged: function() {
       this.$.onRadio.classList.toggle('fill', this.checked);
       this.setAttribute('aria-checked', this.checked ? 'true': 'false');
-      this.fire('change');
+      this.fire('core-change');
     },
     
     labelChanged: function() {

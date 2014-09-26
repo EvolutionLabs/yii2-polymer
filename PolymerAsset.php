@@ -1,6 +1,6 @@
 <?php
 
-namespace speixoto\polymer;
+namespace evolutionlabs\polymer;
 
 use yii\web\AssetBundle;
 use yii\helpers\Url;
@@ -14,7 +14,7 @@ use yii\helpers\Url;
  */
 class PolymerAsset extends AssetBundle
 {
-    public $sourcePath = '@speixoto/polymer/assets';
+    public $sourcePath = '@evolutionlabs/polymer/assets';
     public $js = ['bower_components/platform/platform.js'];
     public $jsOptions = ['position' => \yii\web\View::POS_HEAD];
     public $link = [];

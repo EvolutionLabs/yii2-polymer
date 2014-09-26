@@ -1,6 +1,6 @@
 <?php
 
-namespace speixoto\polymer;
+namespace evolutionlabs\polymer;
 
 use Yii;
 use yii\helpers\Html;
