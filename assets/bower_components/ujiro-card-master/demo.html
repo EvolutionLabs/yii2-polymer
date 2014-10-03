@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <title>ujiro-card Demo</title>
+
+  <script src="../platform/platform.js"></script>
+  <link rel="import" href="../font-roboto/roboto.html">
+  <link rel="import" href="ujiro-card.html">
+
+  <style>
+    ujiro-card {
+      margin: 4px;
+      width: 200px;
+    }
+    .content {
+      background-color: #eeeeee;
+      padding: 20px;
+      font-family: 'RobotoDraft', sans-serif;
+      font-weight: 300;
+      color: #555;
+    }
+    .media {
+      line-height: 0;
+    }
+    .media img {
+      height: auto;
+      width: 200px;
+    }
+    .text {
+      padding: 16px;
+      font-size: 13px;
+    }
+    ujiro-card:first-child > .text {
+      font-size: 12px;
+    }
+    span {
+      font-weight: 400;
+      color: #999;
+    }
+    p {
+      margin: 0.2em 0 0 0;
+    }
+    footer {
+      margin-top: 20px;
+    }
+    footer > div {
+      display: inline-block;
+      font-weight: 400;
+    }
+    .share {
+      color: deeppink;
+    }
+    .more {
+      color: #999;
+      margin-left: 10px;
+    }
+    header {
+      margin: -72px 0 24px 0;
+    }
+    header h2 {
+      color: #ededed;
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 300;
+    }
+
+  </style>
+
+</head>
+<body unresolved>
+
+    <section class="content" fit>
+
+      <ujiro-card>
+        <div class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </ujiro-card>
+
+      <ujiro-card>
+        <div class="media">
+          <img src="./img/img1.jpg" alt="img2">
+        </div>
+        <div class="text">
+          <span>
+            2014/9/14
+          </span>
+          <p>
+          Font size: 13 px. <br>
+           Content padding: 16 px.
+          </p>
+          <footer>
+            <div class="share">SHARE</div>
+            <div class="more">MORE</div>
+          </footer>
+        </div>
+      </ujiro-card>
+
+      <ujiro-card>
+        <div class="media">
+          <img src="./img/img2.jpg" alt="img3">
+        </div>
+        <div class="text">
+          <header>
+           <h2>This is headline.</h2>
+          </header>
+          <p>
+            Headlines: 24 px.
+          </p>
+        </div>
+      </ujiro-card>
+
+    </section>
+
+</body>
+</html>

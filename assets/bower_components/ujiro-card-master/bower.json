@@ -1,0 +1,23 @@
+{
+  "name": "ujiro-card",
+  "version": "0.0.2",
+  "authors": [
+    "ujiro99"
+  ],
+  "description": "Element providing basic card style.",
+  "keywords": [
+    "seed",
+    "polymer",
+    "web-components",
+    "card"
+  ],
+  "license": "MIT",
+  "main": "ujiro-card.html",
+  "homepage": "https://github.com/ujiro99/ujiro-card",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.4.0"
+  },
+  "devDependencies": {
+    "font-roboto": "Polymer/font-roboto#~0.4.1"
+  }
+}

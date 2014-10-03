@@ -1,0 +1,41 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+Element providing basic card style.
+
+##### Example
+
+    <ujiro-card>
+      <div class="media">
+        &lt;!-- some rich media. --&gt;
+        <img src="./img/img.jpg" alt="img">
+      </div>
+      <div class="text">
+        &lt;!-- some content text. --&gt;
+        description, link, or something.
+      </div>
+    </ujiro-card>
+
+@element ujiro-card
+@blurb Element providing basic card style.
+@status alpha
+@homepage http://ujiro99.github.io/ujiro-card
+-->
+<polymer-element name="ujiro-card" noscript>
+  <template>
+    <style>
+      :host {
+        display: inline-block;
+        background-color: #fff;
+        border-radius: 3px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.098) 0px 2px 4px, rgba(0, 0, 0, 0.098) 0px 0px 3px;
+        transition: ease background-color 0.13s;
+      }
+      :host(:hover) {
+        background-color: #f0f0f0;
+      }
+    </style>
+    <content></content>
+  </template>
+</polymer-element>
