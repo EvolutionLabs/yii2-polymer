@@ -25,7 +25,6 @@
 ::content front {
   -webkit-transform: rotateY(0) rotateX(0);
           transform: rotateY(0) rotateX(0);
-    height: 100%;
 }
 
 ::content back {
@@ -55,8 +54,8 @@
   -webkit-transform: rotateX(0);
           transform: rotateX(0); }
 :host-context(.cart-cartu) ::content back{
-    border-top-right-radius: 36px;
-    border-bottom-left-radius: 36px;
+    border-top-right-radius: 27px;
+    border-bottom-left-radius: 27px;
 }
 :host-context(.cart-cartu) ::content back {
     background-color: #424242;
@@ -65,8 +64,8 @@
 }
 :host-context(.cart-cartu) ::content front {
     background-color: white;
-    border-bottom-right-radius: 36px;
-    border-top-left-radius: 36px;
+    border-bottom-right-radius: 27px;
+    border-top-left-radius: 27px;
 }
 ::content .remove-from-cart {
     position: absolute;
