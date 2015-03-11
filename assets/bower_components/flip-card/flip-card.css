@@ -53,16 +53,16 @@
 :host([axis="x"]:hover) ::content back {
   -webkit-transform: rotateX(0);
           transform: rotateX(0); }
-:host-context(.cart-cartu) ::content back{
+:host-context(.cart-custom) ::content back{
     border-top-right-radius: 27px;
     border-bottom-left-radius: 27px;
 }
-:host-context(.cart-cartu) ::content back {
+:host-context(.cart-custom) ::content back {
     background-color: #424242;
     padding-top: 30px;
     height: 100%;
 }
-:host-context(.cart-cartu) ::content front {
+:host-context(.cart-custom) ::content front {
     background-color: white;
     border-bottom-right-radius: 27px;
     border-top-left-radius: 27px;
